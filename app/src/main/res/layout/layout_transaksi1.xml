@@ -9,23 +9,22 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/etNamaPelanggan"
+        android:id="@+id/etNamaPembeli"
         android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama Pelanggan"/>
+        android:hint="Nama Pembeli"/>
 
     <EditText
-        android:id="@+id/etAlamatPelanggan"
+        android:id="@+id/etAlamatPembeli"
         android:inputType="text"
-        android:hint="Alamat Pelanggan"
+        android:hint="Alamat Pembeli"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="DuplicateIds" />
 
     <RadioGroup
         android:id="@+id/rgJenisKelamin"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -39,7 +38,7 @@
         <RadioButton
             android:id="@+id/rbPria"
             android:text="Pria"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <RadioButton
@@ -103,21 +102,21 @@
                 android:text="Nama Barang" />
 
             <RadioButton
-                android:id="@+id/rbKipasAngin"
-                android:text="Kipas Angin"
+                android:id="@+id/rbLemari"
+                android:text="Lemari"
                 android:layout_marginLeft="10dp"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"/>
             <RadioButton
-                android:id="@+id/rbRiceCooker"
+                android:id="@+id/rbKursi"
                 android:layout_marginLeft="10dp"
-                android:text="Rice Cooker"
+                android:text="Kursi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <RadioButton
-                android:id="@+id/rbKompor"
+                android:id="@+id/rbRakSepatu"
                 android:layout_marginLeft="10dp"
-                android:text="Kompor"
+                android:text="Rak Sepatu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </RadioGroup>
@@ -140,17 +139,17 @@
             android:id="@+id/btnProses"
             android:text="Proses"
             android:layout_marginRight="10dp"
-            app:cornerRadius="10dp"
+            app:cornerRadius="50dp"
             android:onClick="clickproses"
-            android:backgroundTint="@color/purple_200"
+            android:backgroundTint="@color/material_dynamic_primary80"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/btnCancel"
             android:text="Cancel"
-            android:backgroundTint="@color/purple_200"
-            app:cornerRadius="10dp"
+            android:backgroundTint="@color/material_dynamic_primary80"
+            app:cornerRadius="50dp"
             android:onClick="clickcancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
